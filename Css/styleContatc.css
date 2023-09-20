@@ -1,0 +1,80 @@
+/* Style pour la section principale */
+.section {
+    position: relative;
+}
+
+/* Style pour l'image en haut */
+.section-image img {
+    width: 100%;
+    
+}
+
+/* Style pour l'overlay */
+.section-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Par défaut, l'overlay est invisible */
+    transition: opacity 0.5s;
+}
+
+/* Style pour le formulaire en dessous de l'image */
+.section-form {
+    width: 100%;
+    max-width: 600px; /* Limitez la largeur du formulaire pour une meilleure lisibilité */
+    padding: 20px;
+    background-color: #f0f0f0; /* Couleur de fond du formulaire */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Ombre légère */
+    text-align: center;
+}
+
+/* Style pour le formulaire de contact */
+.section-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.section-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.section-form input,
+.section-form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.section-form button {
+    padding: 10px 20px;
+    background-color:rgb(195, 88, 23);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.section-form button:hover {
+    background-color: gray;
+}
+
+/* Afficher l'overlay au survol de la section */
+.section:hover .section-overlay {
+    opacity: 1;
+}

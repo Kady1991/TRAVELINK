@@ -1,0 +1,60 @@
+/* Style pour la container principal */
+.container {
+    display: flex;
+    justify-content: center; 
+    margin: auto; /* Centre la container horizontalement */
+    padding: 20px;
+    
+}
+
+/* Style pour chaque carte d'image */
+.image-card {
+    flex: 1; /* Prendra un tiers de la largeur sur les écrans larges, toute la largeur sur les écrans étroits */
+    padding: 20px;
+    background-color:white; /* Couleur de fond */
+    border-radius: 5px 0 5px;
+    box-shadow: 0 0 10px rgba(120, 120, 119, 0.2); /* Ombre légère */
+    text-align: center;
+    margin-right: 20px; /* Espacement entre les cartes */
+    
+}
+
+.image-card img {
+    width: 120%;
+    height: 60vh;
+    border-radius: 5px;
+    z-index: 0;
+    background-position: center center;
+}
+
+.image-card h2 {
+    font-size: 3rem;
+    margin-top: 2rem;
+    color: rgb(255, 165, 0);
+}
+
+.image-card h3{
+    font-size: 2rem;
+}
+
+.image-card button {
+    background-color: rgb(255, 165, 0);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.image-card button:hover {
+    color: rgb(122, 80, 3);
+    background-color: white;
+    border: solid 0.1rem rgb(255, 165, 0);
+    
+}
+/* Supprime la marge de droite de la dernière carte */
+.image-card:last-child {
+    margin-right: 0;
+}
